@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Matriks Tria Intan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Matriks</h1>
+    <div class="matrix-container">
+      <div>
+        <h2>Matriks A</h2>
+        <div class="matrix" id="matrixA"></div>
+      </div>
+      <div>
+        <h2>Matriks B</h2>
+        <div class="matrix" id="matrixB"></div>
+      </div>
+    </div>
+    <div class="operations">
+      <button onclick="calculate('add')">+</button>
+      <button onclick="calculate('subtract')">-</button>
+      <button onclick="calculate('multiply')">x</button>
+    </div>
+    <div class="result-container">
+      <h2>Hasil:</h2>
+      <div class="matrix" id="resultMatrix"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

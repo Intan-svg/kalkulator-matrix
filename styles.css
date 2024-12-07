@@ -1,0 +1,90 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(math.png) ; /* Sentuhan hijau */
+  color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  background: #000000e1;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.matrix-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Sesuaikan menjadi 2 kolom */
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.matrix input {
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+}
+
+.matrix input:hover {
+  background-color: lightblue;
+}
+
+.operations {
+  margin: 20px 0;
+}
+
+.operations button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #90623a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.operations button:hover {
+  background: #c0a860;
+}
+
+.result-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal (opsional) */
+}
+
+.result-container h2 {
+  margin-bottom: 20px ;
+  text-align: center;
+}
+
+.matrix#resultMatrix {
+  margin: 0 auto; /* Pastikan tabel hasil ada di tengah */
+}
